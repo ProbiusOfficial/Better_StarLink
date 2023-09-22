@@ -23,22 +23,29 @@ jobs:
           fetch-depth: 0  # 获取完整的 git 历史, 这样可以推送更改
 
       # 拉取 knownsec/404StarLink 仓库到 docs 文件夹
-      - name: Clone knownsec/404StarLink to docs folder
-        run: |
-          git clone https://github.com/knownsec/404StarLink.git docs
+      - name: Git Clone knownsec/404StarLink
+        uses: sudosubin/git-clone-action@v1.0.1
+        with:
+         repository: knownsec/404StarLink
+         platform: github
+         path: docs
 
-      # 移除 .github 文件夹
       - name: Remove .github folder from docs
         run: rm -rf docs/.github
 
-      # 推送更改到当前仓库
-      - name: Push changes
+      - name: Check for changes
+        id: check_changes
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add docs
-          git commit -m "Updated docs from knownsec/404StarLink"
-          git push
+          git add docs/
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "CHANGES=true" >> $GITHUB_ENV
+          fi
+
+      - name: Commit and push changes
+        if: env.CHANGES == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatically update from StarLink
    
       # - name: Set up Python
       #   uses: actions/setup-python@v2
