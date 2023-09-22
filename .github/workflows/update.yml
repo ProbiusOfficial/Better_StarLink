@@ -1,62 +1,62 @@
-# name: Deploy to Github Pages and Update from StarLink
+name: Deploy to Github Pages and Update from StarLink
 
-# on:
-#   push:
-#     branches:
-#       - master
-#       - main
-#   schedule:
-#     - cron: "0 0 * * *"
+on:
+  push:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: "0 0 * * *"
 
-# permissions:
-#   contents: write
+permissions:
+  contents: write
 
-# jobs:
-#   deploy_and_update:
-#     runs-on: ubuntu-latest
+jobs:
+  deploy_and_update:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       # 检出当前仓库
-#       - name: Checkout current repository
-#         uses: actions/checkout@v2
-#         with:
-#           fetch-depth: 0  # 获取完整的 git 历史, 这样可以推送更改
+    steps:
+      # 检出当前仓库
+      - name: Checkout current repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # 获取完整的 git 历史, 这样可以推送更改
 
-#       # 拉取 knownsec/404StarLink 仓库到 docs 文件夹
-#       - name: Git Clone knownsec/404StarLink
-#         uses: sudosubin/git-clone-action@v1.0.1
-#         with:
-#          repository: knownsec/404StarLink
-#          platform: github
-#          path: docs
+      # 拉取 knownsec/404StarLink 仓库到 docs 文件夹
+      - name: Git Clone knownsec/404StarLink
+        uses: sudosubin/git-clone-action@v1.0.1
+        with:
+         repository: knownsec/404StarLink
+         platform: github
+         path: docs
 
-#       - name: Remove .github folder from docs
-#         run: rm -rf docs/.github
+      - name: Remove .github folder from docs
+        run: rm -rf docs/.github
 
-#       - name: Check for changes
-#         id: check_changes
-#         run: |
-#           ls docs/
-#           git add docs/
-#           if [ -n "$(git status --porcelain)" ]; then
-#             echo "CHANGES=true" >> $GITHUB_ENV
-#           fi
+      - name: Check for changes
+        id: check_changes
+        run: |
+          ls docs/
+          git add docs/
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "CHANGES=true" >> $GITHUB_ENV
+          fi
 
-#       - name: Commit and push changes
-#         if: env.CHANGES == 'true'
-#         uses: stefanzweifel/git-auto-commit-action@v4
-#         with:
-#           commit_message: Automatically update from StarLink
+      - name: Commit and push changes
+        if: env.CHANGES == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatically update from StarLink
    
-#       # - name: Set up Python
-#       #   uses: actions/setup-python@v2
-#       #   with:
-#       #     python-version: 3.9
+      # - name: Set up Python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: 3.9
 
-#       # - name: Install dependencies
-#       #   run: pip install mkdocs-material
+      # - name: Install dependencies
+      #   run: pip install mkdocs-material
 
-#       # - name: Deploy MkDocs
-#       #   run: mkdocs gh-deploy --force
+      # - name: Deploy MkDocs
+      #   run: mkdocs gh-deploy --force
 
       
