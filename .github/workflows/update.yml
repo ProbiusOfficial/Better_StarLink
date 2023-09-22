@@ -30,7 +30,7 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          git add docs/*
+          git add docs/
           if [ -n "$(git status --porcelain)" ]; then
             echo "CHANGES=true" >> $GITHUB_ENV
           fi
