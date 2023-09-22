@@ -28,11 +28,15 @@ jobs:
         with:
          repository: knownsec/404StarLink
          platform: github
-         path: docs
-
-      - name: Remove .github folder from docs
-        run: rm -rf docs/.github
-
+         path: tempStarLink
+         
+      - name: Fetch file from StarLink
+        run: |
+          rm -rf tempStarLink/.github
+          mv tempStarLink/* docs/
+          mv tempStarLink/.* docs/ 2>/dev/null || true
+          rm -rf tempStarLink
+          
       - name: Check for changes
         id: check_changes
         run: |
