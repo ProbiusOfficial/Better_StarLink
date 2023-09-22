@@ -24,16 +24,7 @@ jobs:
           git clone https://github.com/knownsec/404StarLink docs
           rm -rf docs/.github
 
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git add docs/
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "CHANGES=true" >> $GITHUB_ENV
-          fi
-
       - name: Commit and push changes
-        if: env.CHANGES == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatically update from StarLink
