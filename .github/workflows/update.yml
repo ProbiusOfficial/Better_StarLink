@@ -21,7 +21,8 @@ jobs:
 
       - name: Fetch file from StarLink
         run: |
-          git clone https://github.com/knownsec/404StarLink.git docs
+          git clone https://github.com/knownsec/404StarLink docs
+          rm -rf docs/.github
 
       - name: Check for changes
         id: check_changes
@@ -35,7 +36,9 @@ jobs:
         if: env.CHANGES == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automatically update StarLink
+          commit_message: Automatically update from StarLink
+          directory: docs/
+
 
       # - name: Set up Python
       #   uses: actions/setup-python@v2
