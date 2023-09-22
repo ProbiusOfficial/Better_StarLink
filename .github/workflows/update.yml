@@ -21,11 +21,7 @@ jobs:
 
       - name: Fetch file from StarLink
         run: |
-          git clone https://github.com/knownsec/404StarLink.git tempStarLink
-          mkdir -p docs
-          mv tempStarLink/* docs/
-          mv tempStarLink/.* docs/ 2>/dev/null || true
-          rm -rf docs/.github tempStarLink
+          git clone https://github.com/knownsec/404StarLink.git docs
 
       - name: Check for changes
         id: check_changes
