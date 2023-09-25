@@ -53,8 +53,9 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: dark
       primary: black
+      
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -159,8 +160,9 @@ extra_css:
   
 # 页面目录
 
-# nav start
+
 nav:
-  
+# nav start
+
 # nav end
 

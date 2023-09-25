@@ -105,13 +105,13 @@
 
 **7.全部分类**
 
-* [甲方工具](party_a.md)
-* [信息收集](reconnaissance.md)
-* [漏洞探测](vulnerability_assessment.md)
-* [攻击与利用](penetration_test.md)
-* [信息分析](information_analysis.md)
-* [内网工具](intranet_tools.md)
-* [其他](others.md)
+* [甲方工具](home/party_a.md)
+* [信息收集](home/reconnaissance.md)
+* [漏洞探测](home/vulnerability_assessment.md)
+* [攻击与利用](home/penetration_test.md)
+* [信息分析](home/information_analysis.md)
+* [内网工具](home/intranet_tools.md)
+* [其他](home/others.md)
 
 8.[入选2021Kcon黑客大会兵器谱](column/2021KCon_exhibition_with_starlink.md)  
 9.[入选2022Kcon黑客大会兵器谱](column/2022KCon_exhibition_with_starlink.md)  
