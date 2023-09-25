@@ -33,8 +33,7 @@ jobs:
       - name: Fetch file from StarLink
         run: |
           rm -rf tempStarLink/.github
-          mv tempStarLink/* docs/
-          mv tempStarLink/.* docs/ 2>/dev/null || true
+          rsync -a tempStarLink/ docs/
           rm -rf tempStarLink
           
       - name: Check for changes
@@ -45,7 +44,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             echo "CHANGES=true" >> $GITHUB_ENV
           fi
-
+        
       - name: Commit and push changes
         if: env.CHANGES == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
