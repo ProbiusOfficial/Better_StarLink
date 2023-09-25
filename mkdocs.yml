@@ -173,7 +173,7 @@ nav:
       - 其他: others.md
 
   - 项目目录及细节:
-    - detail/index.md
+    - allprojects.md
     - afrog: detail/afrog.md
     - Antenna: detail/Antenna.md
     - antSword: detail/antSword.md
