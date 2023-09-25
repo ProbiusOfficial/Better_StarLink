@@ -1,9 +1,13 @@
 # Better_StarLink
 ![Better_StarLink](https://socialify.git.ci/ProbiusOfficial/Better_StarLink/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fnssctf.wdf.ink%2F%2Fimg%2FWDTJ%2F202309251254703.png&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
-更好的可读性和视觉效果，优雅的与源项目404StarLink保持同步。
+
+在线阅读:[https://starlink.tjsec.cn](https://starlink.tjsec.cn)  
+
 ## 关于 / About
 <!-- insert About -->
 本项目基于 知道创宇的 [404StarLink](https://github.com/knownsec/404StarLink) 项目，基于 **mkdocs-material** 进行构建，使用 **GitHub Actions** 进行自动化同步以及部署。  
+
+Mkdocs文档部署地址: [https://starlink.tjsec.cn](https://starlink.tjsec.cn)
 <!-- About End-->
 ## 导航 / Navigation
 <!-- insert Navigation -->
