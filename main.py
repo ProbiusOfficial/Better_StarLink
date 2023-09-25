@@ -2,10 +2,7 @@
 # author: @probiusofficial
 # date: 2023-09-25
 import os
-# Update docs/home
-'''
-- 移动并且覆盖 docs目录下所有的md文件到 docs/home
-'''
+
 
 # Uodate docs/detial.md
 '''

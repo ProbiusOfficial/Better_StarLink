@@ -23,43 +23,42 @@ jobs:
           fetch-depth: 0  # 获取完整的 git 历史, 这样可以推送更改
 
       # 拉取 knownsec/404StarLink 仓库到 docs 文件夹
-      - name: Git Clone knownsec/404StarLink
-        uses: sudosubin/git-clone-action@v1.0.1
-        with:
-         repository: knownsec/404StarLink
-         platform: github
-         path: tempStarLink
-         
-      - name: Fetch file from StarLink
-        run: |
-          rm -rf tempStarLink/.github
-          rsync -a tempStarLink/ docs/
-          rm -rf tempStarLink
-          
-      - name: Check for changes
-        id: check_changes
-        run: |
-          ls docs/
-          git add docs/
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "CHANGES=true" >> $GITHUB_ENV
-          fi
-        
-      - name: Commit and push changes
-        if: env.CHANGES == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Automatically update from StarLink
-   
-      # - name: Set up Python
-      #   uses: actions/setup-python@v2
+      # - name: Git Clone knownsec/404StarLink
+      #   uses: sudosubin/git-clone-action@v1.0.1
       #   with:
-      #     python-version: 3.9
-
-      # - name: Install dependencies
-      #   run: pip install mkdocs-material
-
-      # - name: Deploy MkDocs
-      #   run: mkdocs gh-deploy --force
+      #    repository: knownsec/404StarLink
+      #    platform: github
+      #    path: tempStarLink
+         
+      # - name: Fetch file from StarLink
+      #   run: |
+      #     rm -rf tempStarLink/.github
+      #     rsync -a tempStarLink/ docs/
+      #     rm -rf tempStarLink
+          
+      # - name: Check for changes
+      #   id: check_changes
+      #   run: |
+      #     ls docs/
+      #     git add docs/
+      #     if [ -n "$(git status --porcelain)" ]; then
+      #       echo "CHANGES=true" >> $GITHUB_ENV
+      #     fi
+        
+      # - name: Commit and push changes
+      #   if: env.CHANGES == 'true'
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: Automatically update from StarLink
+   
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: pip install mkdocs-material
+        
+      - name: Deploy MkDocs
+        run: mkdocs gh-deploy --force
 
       

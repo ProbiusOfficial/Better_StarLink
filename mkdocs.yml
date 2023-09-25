@@ -159,10 +159,95 @@ extra_css:
   - stylesheets/extra.css
   
 # 页面目录
-
-
 nav:
 # nav start
 
-# nav end
+  - 主页: 
+      - index.md
+      - 甲方工具: party_a.md
+      - 信息收集: reconnaissance.md
+      - 漏洞探测: vulnerability_assessment.md
+      - 攻击与利用: penetration_test.md
+      - 信息分析: information_analysis.md
+      - 内网工具: intranet_tools.md
+      - 其他: others.md
+
+  - 项目目录及细节:
+    - detail/index.md
+    - afrog: detail/afrog.md
+    - Antenna: detail/Antenna.md
+    - antSword: detail/antSword.md
+    - AppInfoScanner: detail/AppInfoScanner.md
+    - appshark: detail/appshark.md
+    - As-Exploits: detail/As-Exploits.md
+    - BinAbsInspector: detail/BinAbsInspector.md
+    - BurpCrypto: detail/BurpCrypto.md
+    - camille: detail/camille.md
+    - CDK: detail/CDK.md
+    - Cloud-Bucket-Leak-Detection-Tools: detail/Cloud-Bucket-Leak-Detection-Tools.md
+    - CodeReviewTools: detail/CodeReviewTools.md
+    - Cola-Dnslog: detail/Cola-Dnslog.md
+    - ct: detail/ct.md
+    - DNSlog-GO: detail/DNSlog-GO.md
+    - dperf: detail/dperf.md
+    - Elkeid: detail/Elkeid.md
+    - ENScanGo: detail/ENScanGo.md
+    - f8x: detail/f8x.md
+    - frida-skeleton: detail/frida-skeleton.md
+    - fscan: detail/fscan.md
+    - Glass: detail/Glass.md
+    - gshark: detail/gshark.md
+    - HackBrowserData: detail/HackBrowserData.md
+    - Hades: detail/Hades.md
+    - HaE: detail/HaE.md
+    - Heimdallr: detail/Heimdallr.md
+    - java-object-searcher: detail/java-object-searcher.md
+    - js-cookie-monitor-debugger-hook: detail/js-cookie-monitor-debugger-hook.md
+    - Juggler: detail/Juggler.md
+    - JYso: detail/JYso.md
+    - ksubdomain: detail/ksubdomain.md
+    - KunLun-M: detail/KunLun-M.md
+    - Kunpeng: detail/Kunpeng.md
+    - Kunyu: detail/Kunyu.md
+    - LBot: detail/LBot.md
+    - linglong: detail/linglong.md
+    - LSpider: detail/LSpider.md
+    - MDUT: detail/MDUT.md
+    - murphysec: detail/murphysec.md
+    - myscan: detail/myscan.md
+    - MySQL-Fake-Server: detail/MySQL-Fake-Server.md
+    - MySQLMonitor: detail/MySQLMonitor.md
+    - MysqlT: detail/MysqlT.md
+    - OpenStar: detail/OpenStar.md
+    - passive-scan-client: detail/passive-scan-client.md
+    - Platypus: detail/Platypus.md
+    - Pocassist: detail/Pocassist.md
+    - pocsuite3: detail/pocsuite3.md
+    - PortForward: detail/PortForward.md
+    - rakshasa: detail/rakshasa.md
+    - Redis-Rogue-Server: detail/Redis-Rogue-Server.md
+    - scaninfo: detail/scaninfo.md
+    - ServerScan: detail/ServerScan.md
+    - shellcodeloader: detail/shellcodeloader.md
+    - Stowaway: detail/Stowaway.md
+    - Tai-e: detail/Tai-e.md
+    - vArmor: detail/vArmor.md
+    - veinmind-tools: detail/veinmind-tools.md
+    - Viper: detail/Viper.md
+    - wam: detail/wam.md
+    - WMIHACKER: detail/WMIHACKER.md
+    - ysomap: detail/ysomap.md
+    - ZoomEye-go: detail/ZoomEye-go.md
+    - ZoomEye-Python: detail/ZoomEye-Python.md
+    - ZoomEye-Tools: detail/ZoomEye-Tools.    
+
+  - Kcon兵器谱: 
+    - column/index.md
+    - Kcon2021: column/2021KCon_exhibition_with_starlink.md
+    - Kcon2022: column/2022KCon_exhibition_with_starlink.md
+    - Kcon2023: column/2023KCon_exhibition_with_starlink.md
+
+  - 星际奇兵: Raiders/index.md
+
+  # nav end
 

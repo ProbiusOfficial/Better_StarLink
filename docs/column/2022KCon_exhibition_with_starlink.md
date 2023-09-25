@@ -7,7 +7,7 @@
 KCon黑客大会，汇聚黑客智慧，专注网络攻防技术交流。我们希望为众多“+1”的探索者提供分享与碰撞的舞台，为网络安全的进阶助力。
 
 <div align="center">
-<img src="Images_2022KCon/1.png" width="700">
+<img src="../Images_2022KCon/1.png" width="700">
 </div>
 
 详情访问：[KCon 2022 - KCon 黑客大会](https://kcon.knownsec.com/list-kcon2022.html)
@@ -17,7 +17,7 @@ KCon黑客大会，汇聚黑客智慧，专注网络攻防技术交流。我们�
 KCon「兵器谱」展示便是为鼓励国内安全自动化工具的发展而设立，现已成为每届 KCon 的传统。本届 KCon，有**14**件经过精心筛选的安全“兵器”等待大家探索。
 
 <div align="center">
-<img src="Images_2022KCon/2.png" width="700">
+<img src="../Images_2022KCon/2.png" width="700">
 </div>
 
 其中有 7 个项目来自404星链计划，他们分别是：
