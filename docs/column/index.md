@@ -7,9 +7,9 @@
 过去几届 KCon 黑客大会现场，已有三十多件“安全神兵利器”受到千余名参会黑客的观摩与试用，并获得媒体朋友们的广泛关注。
 
 ## 兵器谱陈列柜 / Arsenal
-- [2021Kcon黑客大会兵器谱](column/2021KCon_exhibition_with_starlink.md)
-- [2022Kcon黑客大会兵器谱](column/2022KCon_exhibition_with_starlink.md)
-- [2023Kcon黑客大会兵器谱](column/2023KCon_exhibition_with_starlink.md)
+- [2021Kcon黑客大会兵器谱](2021KCon_exhibition_with_starlink.md)
+- [2022Kcon黑客大会兵器谱](2022KCon_exhibition_with_starlink.md)
+- [2023Kcon黑客大会兵器谱](2023KCon_exhibition_with_starlink.md)
 
 ## 更多 / More
 - Github Kcon项目地址：[Kcon](https://github.com/knownsec/KCon)
