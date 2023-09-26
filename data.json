@@ -1,13 +1,16 @@
 {
-    "column":"Kcon兵器谱",
-
-    "vulnerability_assessment":"漏洞探测",
-
-    "party_a":"甲方工具",
-
-    "information_analysis":"信息分析",
-
-    "reconnaissance":"信息收集",
-    
-    "intranet_tools":"内网工具"
+    "主页": {
+        "party_a.md": "甲方工具",
+        "reconnaissance.md": "信息收集",
+        "information_analysis.md": "信息分析",
+        "vulnerability_assessment.md": "漏洞探测",
+        "penetration_test.md": "攻击与利用",
+        "intranet_tools.md": "内网工具",
+        "others.md": "其他"
+    },
+    "项目目录及细节": {},
+    "Kcon兵器谱": {
+        "column": "Kcon兵器谱"
+    },
+    "星际奇兵":{}
 }

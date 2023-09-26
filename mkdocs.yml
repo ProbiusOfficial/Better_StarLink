@@ -166,14 +166,14 @@ nav:
       - index.md
       - 甲方工具: party_a.md
       - 信息收集: reconnaissance.md
+      - 信息分析: information_analysis.md
       - 漏洞探测: vulnerability_assessment.md
       - 攻击与利用: penetration_test.md
-      - 信息分析: information_analysis.md
       - 内网工具: intranet_tools.md
       - 其他: others.md
 
   - 项目目录及细节:
-    - allprojects.md
+    - detail/index.md
     - afrog: detail/afrog.md
     - Antenna: detail/Antenna.md
     - antSword: detail/antSword.md
